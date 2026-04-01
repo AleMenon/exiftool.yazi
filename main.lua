@@ -5,8 +5,8 @@ function M:peek(job)
     local args = {
         "-f",
         "-p",
-        "\x1b[34mFile name\x1b[0m: ${FileName;}\n" ..
-        "\x1b[34mLast modified\x1b[0m: ${FileModifyDate;}\n" ..
+        "\x1b[34mFile name\x1b[0m: $FileName\n" ..
+        "\x1b[34mLast modified\x1b[0m: $FileModifyDate\n" ..
         "\x1b[34mPermissions\x1b[0m: ${FilePermissions;}\n" ..
         "\x1b[34mFile type\x1b[0m: ${FileType;}\n" ..
         "\x1b[34mFile OS\x1b[0m: ${FileOS;}\n" ..
