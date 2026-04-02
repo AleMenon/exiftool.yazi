@@ -6,12 +6,13 @@ function M:peek(job)
         "-f",
         "-p",
         "\x1b[34mFile name\x1b[0m: $FileName\n" ..
-        "\x1b[34mLast modified\x1b[0m: $FileModifyDate\n" ..
         "\x1b[34mPermissions\x1b[0m: ${FilePermissions;}\n" ..
         "\x1b[34mFile type\x1b[0m: ${FileType;}\n" ..
         "\x1b[34mFile OS\x1b[0m: ${FileOS;}\n" ..
-        "\x1b[34mFile version\x1b[0m: ${FileVersionNumber;}\n" ..
-        "\x1b[34mProduct version\x1b[0m: ${ProductVersionNumber;}\n" ..
+        "\x1b[34mFile version number\x1b[0m: ${FileVersionNumber;}\n" ..
+        "\x1b[34mProduct version number\x1b[0m: ${ProductVersionNumber;}\n" ..
+        "\x1b[34mFile version\x1b[0m: ${FileVersion;}\n" ..
+        "\x1b[34mProduct version\x1b[0m: ${ProductVersion;}\n" ..
         "\x1b[34mCompany name\x1b[0m: ${CompanyName;}\n" ..
         "\x1b[34mFile description\x1b[0m: ${FileDescription;}\n",
         tostring(job.file.url)
